@@ -1,0 +1,76 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles for the form */
+.order-form {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.order-form td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-form label {
+    font-weight: bold;
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form input[type="email"],
+.order-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .order-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-form {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    background-image: url('bgform.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

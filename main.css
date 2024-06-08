@@ -1,0 +1,131 @@
+/* main.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Set background image and adjust its size and position */
+    background-image: url('laddu.jpg');
+    background-size: cover; /* Adjust background image size */
+    background-position: center top; /* Center the background image */
+    min-height: 100vh; /* Ensure background covers full height */
+}
+
+/* Navigation Bar */
+.tabs {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.tabs nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.tabs nav h3 {
+    padding: 20px;
+    margin: 0;
+    flex: 1; /* Make each h3 take equal space */
+    text-align: center;
+}
+
+.tabs nav h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.tabs nav h3 a:hover {
+    color: lightgray;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+main h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+main a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Add some border-radius for better appearance */
+}
+
+main a:hover {
+    background-color: lightgray;
+}
+
+/* Status Bar */
+footer {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Add background for better readability */
+    color: white;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Home Tab Style */
+.homee {
+    background-color: whitesmoke;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    main a {
+        padding: 8px 16px;
+    }
+
+    .tabs nav h3 {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    main h1 {
+        font-size: 1.2em;
+    }
+
+    main p {
+        font-size: 0.9em;
+    }
+
+    main a {
+        padding: 6px 12px;
+    }
+
+    .tabs nav h3 {
+        padding: 10px;
+    }
+}

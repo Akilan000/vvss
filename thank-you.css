@@ -1,0 +1,56 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    background-color: #f9f9f9; /* Light background for a pleasant look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Container style */
+.container {
+    background: #ffffff; /* White background for the content */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle 3D effect */
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Heading style */
+h1 {
+    font-size: 2em;
+    color: #4CAF50; /* Green color for a positive and pleasant feel */
+    margin-bottom: 20px;
+}
+
+/* Paragraph style */
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

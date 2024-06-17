@@ -9,16 +9,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* Set background image and adjust its size and position */
-    background-image: url('laddu.jpg');
-    background-size: cover; /* Adjust background image size */
-    background-position: center top; /* Center the background image */
+    background-color: #FFC0CB; /* Pastel Pink background */
     min-height: 100vh; /* Ensure background covers full height */
 }
 
 /* Navigation Bar */
 .tabs {
-    background-color: #333;
+    background-color: #98FF98; /* Mint Green background */
     overflow: hidden;
 }
 
@@ -36,12 +33,12 @@ body {
 }
 
 .tabs nav h3 a {
-    color: white;
+    color: #3C2A1D; /* Dark Chocolate Brown text */
     text-decoration: none;
 }
 
 .tabs nav h3 a:hover {
-    color: lightgray;
+    color: #FFFACD; /* Soft Yellow text on hover */
 }
 
 /* Main Content Area */
@@ -53,25 +50,27 @@ main {
 main h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: #3C2A1D; /* Dark Chocolate Brown text */
 }
 
 main p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    color: #3C2A1D; /* Dark Chocolate Brown text */
 }
 
 main a {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: #98FF98; /* Mint Green button */
+    color: #3C2A1D; /* Dark Chocolate Brown text */
     text-decoration: none;
     border-radius: 5px; /* Add some border-radius for better appearance */
 }
 
 main a:hover {
-    background-color: lightgray;
+    background-color: #FFFACD; /* Soft Yellow background on hover */
 }
 
 /* Status Bar */
@@ -79,7 +78,7 @@ footer {
     position: relative;
     text-align: center;
     padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Add background for better readability */
+    background-color: rgba(60, 42, 29, 0.8); /* Dark Chocolate Brown with transparency */
     color: white;
     margin-top: auto; /* Push footer to bottom */
 }
@@ -90,7 +89,7 @@ footer p {
 
 /* Home Tab Style */
 .homee {
-    background-color: whitesmoke;
+    background-color: #E6E6FA; /* Lavender background */
 }
 
 /* Media Queries for Responsive Design */

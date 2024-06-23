@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname)));
 // Directly specify email credentials
 const EMAIL_USER = "akilanammudhina02@gmail.com";
 const EMAIL_PASS = "dkql labe rtac dlkb";
-const EMAIL_RECEIVER = "ammudhina02@gmail.com";
+const EMAIL_RECEIVER = "vazhgavalamudan002@gmail.com";
 
 // Create a Nodemailer transporter using SMTP
 let transporter = nodemailer.createTransport({

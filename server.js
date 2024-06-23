@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname)));
 // Directly specify email credentials
 const EMAIL_USER = "akilanammudhina02@gmail.com";
 const EMAIL_PASS = "dkql labe rtac dlkb";
-const EMAIL_RECEIVER = "vazhgavalamudan002@gmail.com";
+const EMAIL_RECEIVER = "ammudhina02@gmail.com";
 
 // Create a Nodemailer transporter using SMTP
 let transporter = nodemailer.createTransport({
@@ -30,8 +30,13 @@ let transporter = nodemailer.createTransport({
     },
 });
 
-// Route to serve the feedback.html file
+// Route to serve the main.html file at the root URL
 app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "main.html"));
+});
+
+// Route for serving feedback.html
+app.get("/feedback", (req, res) => {
     res.sendFile(path.join(__dirname, "feedback.html"));
 });
 

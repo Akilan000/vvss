@@ -8,13 +8,12 @@
 /* General styles for the form */
 .order-form {
     margin: 20px auto;
-    border-collapse: collapse;
     width: 80%;
     max-width: 600px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .order-form td {
@@ -54,23 +53,32 @@
 @media (max-width: 768px) {
     .order-form {
         width: 90%;
+        padding: 15px; /* Increase padding a bit for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .order-form {
         width: 100%;
-        padding: 10px;
+        padding: 10px; /* Further reduce padding for very small screens */
     }
 }
 
+/* Center align h1 */
 h1 {
     text-align: center;
     margin-top: 20px;
 }
 
+/* Basic body styles */
 body {
-    background-image: url('bgform.png');
+    padding: 0;
+    margin: 0;
+    background-image: url('bgtheme2.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
 }

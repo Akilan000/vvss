@@ -1,45 +1,33 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Feedback Page</title>
-        <link rel="stylesheet" href="feedback.css" />
-    </head>
-    <body>
-        <h1>Feedback Page</h1>
-        <form class="order-form" action="/submit-feedback" method="POST">
-            <table>
-                <tr>
-                    <td><label for="name">Name:</label></td>
-                    <td>
-                        <input type="text" id="name" name="name" required />
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email:</label></td>
-                    <td>
-                        <input type="email" id="email" name="email" required />
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="message">Message:</label></td>
-                    <td>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="4"
-                            cols="50"
-                            required
-                        ></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center">
-                        <button type="submit">Submit Feedback</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <h1>Feedback Page</h1>
+    <form class="order-form" action="/submit-feedback" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center">
+                    <button type="submit">Submit Feedback</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>

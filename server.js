@@ -62,6 +62,50 @@ app.post("/submit-feedback", (req, res) => {
     });
 });
 
+// Route for Rava Laddu Order
+app.post("/submit-rlorder", (req, res) => {
+    const { name, phone, address, quantity } = req.body;
+
+    let mailOptions = {
+        from: EMAIL_USER,
+        to: EMAIL_RECEIVER,
+        subject: "New Rava Laddu Order",
+        text: `New Rava Laddu Order Details:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nQuantity: ${quantity}`,
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error("Error sending email:", error);
+            return res.status(500).send("Error sending email");
+        } else {
+            console.log("Email sent:", info.response);
+            return res.redirect("/thank-you.html"); // Redirect to thank-you page on success
+        }
+    });
+});
+
+// Route for Groundnut Laddu Order
+app.post("/submit-glorder", (req, res) => {
+    const { name, phone, address, quantity } = req.body;
+
+    let mailOptions = {
+        from: EMAIL_USER,
+        to: EMAIL_RECEIVER,
+        subject: "New Groundnut Laddu Order",
+        text: `New Groundnut Laddu Order Details:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nQuantity: ${quantity}`,
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error("Error sending email:", error);
+            return res.status(500).send("Error sending email");
+        } else {
+            console.log("Email sent:", info.response);
+            return res.redirect("/thank-you.html"); // Redirect to thank-you page on success
+        }
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
